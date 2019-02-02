@@ -1,0 +1,14 @@
+C:\Users\f4t1h\source\repos\brute_force\brute_force\bin\Debug\brute_force.exe.config
+C:\Users\f4t1h\source\repos\brute_force\brute_force\bin\Debug\brute_force.exe
+C:\Users\f4t1h\source\repos\brute_force\brute_force\bin\Debug\brute_force.pdb
+C:\Users\f4t1h\source\repos\brute_force\brute_force\bin\Debug\MySql.Data.dll
+C:\Users\f4t1h\source\repos\brute_force\brute_force\bin\Debug\Google.Protobuf.dll
+C:\Users\f4t1h\source\repos\brute_force\brute_force\bin\Debug\MySql.Data.xml
+C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.csprojAssemblyReference.cache
+C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.Form1.resources
+C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.Properties.Resources.resources
+C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.csproj.GenerateResource.cache
+C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.csproj.CoreCompileInputs.cache
+C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.csproj.CopyComplete
+C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.exe
+C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.pdb
