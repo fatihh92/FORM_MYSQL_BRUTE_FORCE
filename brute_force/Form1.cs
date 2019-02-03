@@ -67,7 +67,7 @@ namespace brute_force
 
             try
             {
-                StreamReader sr = new StreamReader("C:\\Users\\f4t1h\\source\\repos\\brute_force\\username.txt");
+                StreamReader sr = new StreamReader("path\\username.txt");
                 line = sr.ReadLine();
 
                 while (line != null)
@@ -85,7 +85,7 @@ namespace brute_force
 
             try
             {
-                StreamReader sr = new StreamReader("C:\\Users\\f4t1h\\source\\repos\\brute_force\\password.txt");
+                StreamReader sr = new StreamReader("path\\password.txt");
                 line = sr.ReadLine();
 
                 while (line != null)
