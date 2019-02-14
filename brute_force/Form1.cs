@@ -37,13 +37,13 @@ namespace brute_force
             checkBox1.ForeColor = Color.DarkGreen;
             checkBox2.ForeColor = Color.DarkGreen;
             button3.ForeColor = Color.DarkGreen;
-            label6.Text = string.Empty;
-            label7.Text = string.Empty;
+            label6.Text = "None";
+            label7.Text = "None";
             label8.Text = "CREDENTİALS";
             listBox1.Items.Clear();
-            button2.Enabled = false;
             listBox1.ForeColor = Color.DarkGreen;
-            
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+
         }
 
         public string sunucu;
@@ -119,12 +119,13 @@ namespace brute_force
                             label4.Text = "Connected";
                             label6.Text = "Username: "+i.ToString();
                             label7.Text = "Password: "+pass.ToString();
+                            kullanıcı = i.ToString();
                             break;
                         }
                     }
                     catch
                     {
-                        label4.Text = "Couldn't Connect "; 
+                        label4.Text = "Couldn't Connect ";
                     }
                     
                 }
@@ -147,7 +148,8 @@ namespace brute_force
                            label4.Text = "Connected";
                            label6.Text = "Username: " + kullanıcı.ToString();
                            label7.Text = "Password: " + i.ToString();
-                            break;
+                           pass = i.ToString();
+                           break;
                          }
 
                       }
@@ -177,6 +179,8 @@ namespace brute_force
                                 label4.Text = "Connected";
                                 label6.Text = "Username: " + i.ToString();
                                 label7.Text = "Password: " + j.ToString();
+                                kullanıcı = i.ToString();
+                                pass = j.ToString();
                                 break;
                             }
 
@@ -193,8 +197,12 @@ namespace brute_force
 
         public void button2_Click(object sender, EventArgs e)
         {
-
-
+            Form2 f2 = new Form2();
+            f2.sunucu = sunucu;
+            f2.kullanıcı = kullanıcı;
+            f2.parola = pass;
+            f2.Show();
+            this.Hide();
         }
 
         public void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -204,6 +212,7 @@ namespace brute_force
                 checkBox1.Text = "Selected username.txt";
                 textBox2.Enabled = false;
                 button3.Enabled = false;
+                textBox2.Clear();
             }
             else
             {
@@ -223,6 +232,7 @@ namespace brute_force
                 checkBox2.Text = "Selected password.txt";
                 textBox3.Enabled = false;
                 button3.Enabled = false;
+                textBox3.Clear();
             }
             else
             {

@@ -12,3 +12,4 @@ C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.csproj
 C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.csproj.CopyComplete
 C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.exe
 C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.pdb
+C:\Users\f4t1h\source\repos\brute_force\brute_force\obj\Debug\brute_force.Form2.resources
