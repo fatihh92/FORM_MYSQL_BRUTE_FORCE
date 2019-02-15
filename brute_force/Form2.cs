@@ -42,6 +42,7 @@ namespace brute_force
             button3.ForeColor = Color.DarkGreen;
             button4.ForeColor = Color.DarkGreen;
             button5.ForeColor = Color.DarkGreen;
+            button6.ForeColor = Color.DarkGreen;
             listBox1.Items.Clear();
             listBox1.ForeColor = Color.DarkGreen;
             label4.Text = "YOUR QUERY:(Only SELECT Queries)";
@@ -147,6 +148,11 @@ namespace brute_force
                 label4.Text = "YOUR QUERY:(Only SELECT Queries)";
             }
             label7.Text = pastime.Elapsed.Hours.ToString() + ":" + pastime.Elapsed.Minutes.ToString() + ":" + pastime.Elapsed.Seconds.ToString() + ":" + (pastime.Elapsed.Milliseconds/10).ToString();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

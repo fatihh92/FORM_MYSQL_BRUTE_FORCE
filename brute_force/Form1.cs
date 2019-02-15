@@ -37,6 +37,7 @@ namespace brute_force
             checkBox1.ForeColor = Color.DarkGreen;
             checkBox2.ForeColor = Color.DarkGreen;
             button3.ForeColor = Color.DarkGreen;
+            button4.ForeColor = Color.DarkGreen;
             label6.Text = "None";
             label7.Text = "None";
             label8.Text = "CREDENTİALS";
@@ -50,6 +51,8 @@ namespace brute_force
         public string kullanıcı;
         public string database;
         public string pass;
+        public string username_path;
+        public string password_path;
 
         public void button1_Click(object sender, EventArgs e)
         {
@@ -67,7 +70,7 @@ namespace brute_force
 
             try
             {
-                StreamReader sr = new StreamReader("path\\username.txt");
+                StreamReader sr = new StreamReader(username_path);
                 line = sr.ReadLine();
 
                 while (line != null)
@@ -80,12 +83,12 @@ namespace brute_force
             }
             catch (Exception err)
             {
-                label4.Text = "Username dosyasının okumasında hata: " + err.Message;
+                label4.Text = "Username couldn't be read: " + err.Message;
             }
 
             try
             {
-                StreamReader sr = new StreamReader("path\\password.txt");
+                StreamReader sr = new StreamReader(password_path);
                 line = sr.ReadLine();
 
                 while (line != null)
@@ -98,7 +101,7 @@ namespace brute_force
             }
             catch (Exception err)
             {
-                label4.Text = "Password dosyasında okumada hata: "+err.Message;
+                label4.Text = "Password couldn't be read: "+err.Message;
             }
 
             if (checkBox1.Checked && checkBox2.Checked == false)
@@ -209,18 +212,27 @@ namespace brute_force
         {
             if (checkBox1.Checked)
             {
-                checkBox1.Text = "Selected username.txt";
+                OpenFileDialog usernamefile = new OpenFileDialog();
+                usernamefile.Filter = "Text File|*.txt";
+                usernamefile.Title = "Choose Username.txt";
+                usernamefile.ShowDialog();
+                username_path = usernamefile.FileName;
+                string usernamefile_name = usernamefile.SafeFileName;
+                checkBox1.Text = "Selected:"+usernamefile_name;
                 textBox2.Enabled = false;
                 button3.Enabled = false;
                 textBox2.Clear();
             }
             else
             {
+                if(checkBox2.Checked)
+                { button3.Enabled = false; }
+                else
+                { button3.Enabled = true; }
                 textBox2.Enabled = true;
                 textBox2.Clear();
                 listBox1.Items.Clear();
-                checkBox1.Text = "Use Username List";
-                button3.Enabled = true;
+                checkBox1.Text = "Choose Username List";
             }
 
         }
@@ -229,18 +241,27 @@ namespace brute_force
         {
             if (checkBox2.Checked)
             {
-                checkBox2.Text = "Selected password.txt";
+                OpenFileDialog passwordfile = new OpenFileDialog();
+                passwordfile.Filter = "Text File|*.txt";
+                passwordfile.Title = "Choose Password.txt";
+                passwordfile.ShowDialog();
+                password_path = passwordfile.FileName;
+                string passwordfile_name = passwordfile.SafeFileName;
+                checkBox2.Text = "Selected:"+passwordfile_name;
                 textBox3.Enabled = false;
                 button3.Enabled = false;
                 textBox3.Clear();
             }
             else
             {
+                if (checkBox1.Checked)
+                { button3.Enabled = false; }
+                else
+                { button3.Enabled = true; }
                 textBox3.Enabled = true;
                 textBox3.Clear();
                 listBox1.Items.Clear();
-                checkBox2.Text = "Use Password List";
-                button3.Enabled = true;
+                checkBox2.Text = "Choose Password List";
             }
 
         }
@@ -269,6 +290,11 @@ namespace brute_force
                 label4.Text = "Couldn't Connect";
             }
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

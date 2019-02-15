@@ -46,6 +46,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -154,9 +155,9 @@
             this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBox1.Location = new System.Drawing.Point(17, 178);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(226, 30);
+            this.checkBox1.Size = new System.Drawing.Size(263, 30);
             this.checkBox1.TabIndex = 12;
-            this.checkBox1.Text = "Use Username List";
+            this.checkBox1.Text = "Choose Username List";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -166,9 +167,9 @@
             this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkBox2.Location = new System.Drawing.Point(17, 209);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(221, 30);
+            this.checkBox2.Size = new System.Drawing.Size(258, 30);
             this.checkBox2.TabIndex = 13;
-            this.checkBox2.Text = "Use Password List";
+            this.checkBox2.Text = "Choose Password List";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
@@ -196,7 +197,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(12, 365);
+            this.label6.Location = new System.Drawing.Point(15, 312);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(301, 70);
             this.label6.TabIndex = 16;
@@ -206,7 +207,7 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(15, 456);
+            this.label7.Location = new System.Drawing.Point(15, 402);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(301, 70);
             this.label7.TabIndex = 17;
@@ -216,18 +217,30 @@
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(12, 282);
+            this.label8.Location = new System.Drawing.Point(15, 242);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(301, 70);
             this.label8.TabIndex = 18;
             this.label8.Text = "label8";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.Location = new System.Drawing.Point(19, 490);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(120, 40);
+            this.button4.TabIndex = 19;
+            this.button4.Text = "EXIT";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 538);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -275,6 +288,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button4;
     }
 }
 

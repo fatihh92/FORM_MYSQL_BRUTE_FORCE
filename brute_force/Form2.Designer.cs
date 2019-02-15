@@ -45,12 +45,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(12, 486);
+            this.button1.Location = new System.Drawing.Point(17, 405);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 40);
             this.button1.TabIndex = 0;
@@ -209,12 +210,23 @@
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(10, 358);
+            this.label7.Location = new System.Drawing.Point(9, 335);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(131, 46);
             this.label7.TabIndex = 16;
             this.label7.Text = "label7";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button6.Location = new System.Drawing.Point(17, 466);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(115, 40);
+            this.button6.TabIndex = 17;
+            this.button6.Text = "EXIT";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form2
             // 
@@ -222,6 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(860, 538);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -267,5 +280,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button6;
     }
 }
