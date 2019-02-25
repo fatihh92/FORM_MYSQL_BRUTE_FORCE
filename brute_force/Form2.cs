@@ -133,7 +133,10 @@ namespace brute_force
                     MySqlDataReader myreader = cmd.ExecuteReader();
                     while (myreader.Read())
                     {
-                        listBox1.Items.Add(sayı.ToString() + ")" + myreader.GetString(0)+" - "+myreader.GetString(1)+" - "+myreader.GetString(2)+" - "+myreader.GetString(3)+" - "+myreader.GetString(4));
+                        //listBox1.Items.Add(sayı.ToString() + ")" + myreader.GetString(0)+" - "+myreader.GetString(1)+" - "+myreader.GetString(2)+" - "+myreader.GetString(3)+" - "+myreader.GetString(4));
+                        if (myreader.ToString().Contains("username"))
+                        { listBox1.Items.Add(sayı.ToString() + ")" + myreader["username"] + " - " + myreader["password"]); }
+                        else { listBox1.Items.Add(sayı.ToString() +")"+myreader[1]+" - "+myreader[2]); }
                         sayı++;
                     }
                 }
